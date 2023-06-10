@@ -86,14 +86,14 @@ class Pokemon():
 MyChar = Pokemon("Charizard")
 MyChar.pokedex()
 
-# pikachu = Pokemon("Pikachu")
-# pikachu.pokedex()
+pikachu = Pokemon("Pikachu")
+pikachu.pokedex()
 
-# pidgeotto = Pokemon("Pidgeotto")
-# pidgeotto.pokedex()
+pidgeotto = Pokemon("Pidgeotto")
+pidgeotto.pokedex()
 
-# arcanine = Pokemon("Arcanine")
-# arcanine.pokedex()
+arcanine = Pokemon("Arcanine")
+arcanine.pokedex()
 
-# zapdos = Pokemon("Zapdos")
-# zapdos.pokedex()
+zapdos = Pokemon("Zapdos")
+zapdos.pokedex()
