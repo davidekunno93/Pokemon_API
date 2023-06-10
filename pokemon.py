@@ -31,7 +31,7 @@ class Pokemon():
         self.test_data()
         data = self.test_data()
         pokemon_name = data["name"].title()
-        return f"This Pokemon's name is: {pokemon_name}"
+        return f"*This Pokemon's name is: {pokemon_name}*"
 
 # capture pokemon's XP
 # pokemon_xp = data["base_experience"]
@@ -78,19 +78,22 @@ class Pokemon():
         all_dict["sprite"] = self.sprite()
         all_dict["abilities"] = self.abilities()
         all_dict["moves"] = self.moves()
-        print(all_dict, "\n")
+        i = 1
+        for k, v in all_dict.items():
+            print(k.title(), ": ", v, sep="", end="\n\n")
+        # print(all_dict, "\n")
         
 MyChar = Pokemon("Charizard")
 MyChar.pokedex()
 
-pikachu = Pokemon("Pikachu")
-pikachu.pokedex()
+# pikachu = Pokemon("Pikachu")
+# pikachu.pokedex()
 
-pidgeotto = Pokemon("Pidgeotto")
-pidgeotto.pokedex()
+# pidgeotto = Pokemon("Pidgeotto")
+# pidgeotto.pokedex()
 
-arcanine = Pokemon("Arcanine")
-arcanine.pokedex()
+# arcanine = Pokemon("Arcanine")
+# arcanine.pokedex()
 
-zapdos = Pokemon("Zapdos")
-zapdos.pokedex()
+# zapdos = Pokemon("Zapdos")
+# zapdos.pokedex()
