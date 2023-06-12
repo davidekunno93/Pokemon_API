@@ -80,20 +80,29 @@ class Pokemon():
         all_dict["moves"] = self.moves()
         i = 1
         for k, v in all_dict.items():
-            print(k.title(), ": ", v, sep="", end="\n\n")
+            if isinstance(v, dict):
+                print(k.title(), ":", sep="")
+                for n, d in v.items():
+                    print("\t", n, ": ", d, sep="")
+                print("")
+            else:
+                print(k.title(), ": ", v, sep="", end="\n\n")
         # print(all_dict, "\n")
         
 MyChar = Pokemon("Charizard")
 MyChar.pokedex()
 
-# pikachu = Pokemon("Pikachu")
-# pikachu.pokedex()
+pikachu = Pokemon("Pikachu")
+pikachu.pokedex()
 
-# pidgeotto = Pokemon("Pidgeotto")
-# pidgeotto.pokedex()
+pidgeotto = Pokemon("Pidgeotto")
+pidgeotto.pokedex()
 
-# arcanine = Pokemon("Arcanine")
-# arcanine.pokedex()
+arcanine = Pokemon("Arcanine")
+arcanine.pokedex()
 
-# zapdos = Pokemon("Zapdos")
-# zapdos.pokedex()
+zapdos = Pokemon("Zapdos")
+zapdos.pokedex()
+
+blastoise = Pokemon("Blastoise")
+blastoise.pokedex()
